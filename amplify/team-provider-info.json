@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-blttodoweb-dev-210347-authRole",
+      "UnauthRoleArn": "arn:aws:iam::518912499641:role/amplify-blttodoweb-dev-210347-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::518912499641:role/amplify-blttodoweb-dev-210347-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-blttodoweb-dev-210347-deployment",
+      "UnauthRoleName": "amplify-blttodoweb-dev-210347-unauthRole",
+      "StackName": "amplify-blttodoweb-dev-210347",
+      "StackId": "arn:aws:cloudformation:eu-west-1:518912499641:stack/amplify-blttodoweb-dev-210347/251f2430-2bbb-11ed-a7f2-06f5fafc2e7d",
+      "AmplifyAppId": "d3px6qujpiu9gv"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3px6qujpiu9gv",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "blttodoweb7ed50602": {}
+      }
+    }
+  }
+}
