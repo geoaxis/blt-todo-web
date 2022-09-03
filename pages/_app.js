@@ -1,7 +1,19 @@
-import '../styles/globals.css'
+import { Amplify } from 'aws-amplify';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import awsExports from '../src/aws-exports';
+Amplify.configure(awsExports);
+
+
+function MyApp({ signOut, user }) {
+  return (
+    <>
+      <h1>Hello {user.username}</h1>
+      <button onClick={signOut}>Sign out</button>
+    </>
+  );
 }
 
-export default MyApp
+export default withAuthenticator(MyApp);
