@@ -11,6 +11,7 @@
   "dependencies": {
     "@aws-amplify/ui-react": "^3.5.0",
     "aws-amplify": "^4.3.34",
+    "aws-rum-web": "^1.8.2",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
