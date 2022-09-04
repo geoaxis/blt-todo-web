@@ -15,7 +15,11 @@ try {
     guestRoleArn: "arn:aws:iam::518912499641:role/RUM-Monitor-eu-west-1-518912499641-2985360232661-Unauth",
     identityPoolId: "eu-west-1:1439d33e-4d2b-4490-a680-9c10b73da8be",
     endpoint: "https://dataplane.rum.eu-west-1.amazonaws.com",
-    telemetries: ["performance","errors","http"],
+    telemetries: [
+      "performance",
+      "errors",
+      [ 'http', { stackTraceLength: 500, addXRayTraceIdHeader: true } ]
+    ],
     allowCookies: true,
     enableXRay: true
   };
